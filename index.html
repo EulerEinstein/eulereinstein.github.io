@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohd Afif Irfan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <!--<li><a href="#projects">Projects</a></li>-->
+          <li><a href="#contact">Contact</a></li>
+          <!--<li><a href="index_de.html"><img src="assets/germanflag.svg" alt="test" width="30vw"></a></li>-->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohd Afif Irfan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <!--<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>-->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <!--<li><a href="#german" onclick="toggleMenu()"><img src="assets/germanflag.svg" alt="test" width="30vw"></a></li>-->
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohd Afif Irfan</h1>
+        <p class="section__text__p2">Automation and Control Enthusiast / Programmer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume - Mohamad Afif Irfan Bin Abdul Halim.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mohamad-afif-irfan-bin-abdul-halim-81621422a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/EulerEinstein'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I have graduated with a degree in <b>Bachelor of Engineering in Mechatronics 
+              at Technical University of Applied Sciences Würzburg-Schweinfurt, Germany.</b> 
+              During my studies, I took specialisations in <b>Automation 
+              and Robotics as well as Automated Systems and Human-Machine-Interaction.</b> 
+              As part of my studies, I have been working as an intern for the 
+              development of test automation for lawn mowing robot at STIHL in 
+              Waiblingen, Germany. Currently, I'm on a graduate employability 
+              enhancement scheme program at PETRONAS, where I gained some exposure 
+              and experience in project management of an EPCIC project for low-speed 
+              wind turbine. I'm currently looking for opportunities in the field of automation, 
+              where I believe I could contribute the most with my 
+              knowledge and expertise as well as continuously develop my career in the industry. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#education'"
+      />
+    </section>
+    <section id="education">
+      <p class="section__text__p1">About My</p>
+      <h1 class="title">Education</h1>
+      <div class="education-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="education-sub-title">Bachelor’s Degree of Mechatronics (B. Eng.)</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/location.png"
+                  alt="location icon"
+                  class="icon"
+                  style="margin-left: 3vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 3vw;">Technical University of Applied Sciences Würzburg-Schweinfurt, Germany</h3>
+                  <p style="margin-left: 3vw;">10/2018 - 09/2023</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 2.7vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 2.7vw;">Specialisations</h3>
+                  <p style="margin-left: 2.7vw;">1. Automation and Robotics</p>
+                  <p style="margin-left: 2.7vw;">2. Automated Systems, Human-Machine-Interaction and Connected Mobility</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 2.7vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 2.7vw;">Bachelor's thesis</h3>
+                  <p style="margin-left: 2.7vw;">Virtual Commisioning of a Linear Axis Machine</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 2.7vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 2.7vw;">Final grade: 1.7 (German grading system)</h3>
+                  <p style="margin-left: 2.7vw;">Equivalent to UK First Class Honours according to <a href="https://ssag.eu/studying-in-germany/understanding-converting-german-grades/">SSAG</a></p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="education-sub-title">German Language Course (Level A2 - C1)</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/location.png"
+                  alt="location icon"
+                  class="icon"
+                  style="margin-left: 3vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 3vw;">University of Mannheim, Germany</h3>
+                  <p style="margin-left: 3vw;">03/2018 - 09/2018</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 2.7vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 2.7vw;">Final grade: DSH-2 equivalent to C1-Level (Advanced)</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="education-sub-title">Cambridge International A-Levels</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/location.png"
+                  alt="location icon"
+                  class="icon"
+                  style="margin-left: 3vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 3vw;">German-Malaysian Institute, Malaysia</h3>
+                  <p style="margin-left: 3vw;">06/2016 - 02/2018</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 2.7vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 2.7vw;">Final grade: 3 A's (Mathematics, Physics, Chemistry) & 1 B (German)</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="education-sub-title">Malaysian Certificate of Education (SPM)</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/location.png"
+                  alt="location icon"
+                  class="icon"
+                  style="margin-left: 3vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 3vw;">MRSM Kepala Batas, Pulau Pinang, Malaysia</h3>
+                  <p style="margin-left: 3vw;">01/2011 - 12/2015</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 2.7vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 2.7vw;">Final grade: 11 A's</h3>
+                  <p style="margin-left: 2.7vw;"> Highest distinction (A+) in Mathematics, Additional Mathematics, Physics, Chemistry</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">PROTEGE-GEES at Project Delivery & Technology Division, PETRONAS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/location.png"
+                  alt="location icon"
+                  class="icon"
+                  style="margin-left: 3vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 3vw;">Kuala Lumpur, Malaysia</h3>
+                  <p style="margin-left: 3vw;">11/2023 - present</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 2.7vw;"
+                />
+                <div>
+                  <h3 style="margin-left: 2.7vw;">Experience/Contributions</h3>
+                  <p style="margin-left: 2.7vw;">- Involved in EPCIC planning activities for low speed wind turbine pilot research project</p>
+                  <p style="margin-left: 2.7vw;">- Developed an automated monitoring system to track the status of engineering deliverables with Microsoft Excel</p>
+                  <p style="margin-left: 2.7vw;">- Conducted a market research for wind turbine companies worldwide</p>
+                  <p style="margin-left: 2.7vw;">- Collected data from projects for manpower analysis</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Internship at System Validation of Lawn Mowing Robot Department</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/location.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 3vw;"
+                />
+                <div>
+                  <h3  style="margin-left: 3vw;">R&D Division, ANDREAS STIHL AG & Co. KG, Waiblingen, Germany</h3>
+                  <p  style="margin-left: 3vw;">04/2022 - 09/2022</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-left: 2.7vw;"
+                />
+                <div>
+                  <h3  style="margin-left: 2.7vw;">Experience/Contributions</h3>
+                  <p  style="margin-left: 2.7vw;">- Worked with PROVEtech:TA and CANape-Software for test automation</p>
+                  <p  style="margin-left: 2.7vw;">- Worked with MATLAB App Designer for a user interface of data evaluation</p>
+                  <p  style="margin-left: 2.7vw;">- Development of Python program of a GUI for 2D garden design with drag and drop feature</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#skills'"
+      />
+    </section><section id="skills">
+      <p class="section__text__p1">View My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>Malay</h3>
+                  <p>Native language
+                    &emsp;&emsp;&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;</p>
+                </div>
+              </div>
+            </div>
+            <div class="article-container">
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>English</h3>
+                  <p>Fluent in speech and writing
+                    &emsp;&emsp;&nbsp;&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <div class="article-container">
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>German</h3>
+                  <p>Fluent in speech and writing
+                    &emsp;&emsp;&nbsp;&nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming languages</h2>
+            <div class="article-container">
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experience with OpenCV, Tensorflow, Matplotlib, Numpy and Standard Library for Machine Learning and GUI projects</p>
+                </div>
+              </div>
+            </div>
+            <div class="article-container">
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Personal projects: Car rental system, Bookshop inventory system</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title">Software/Platforms</h2>
+            <div class="article-container">
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>Microsoft Office</h3>
+                  <p>Data analysis with Excel, documentation and presentations of laboratory experiments and industrial project at the university</p>
+                </div>
+              </div>
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>MATLAB and Simulink</h3>
+                  <p>Create the simulation models for the control loop in the field of control engineering and implementation of numerical mathematics</p>
+                </div>
+              </div>
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>NI LabVIEW</h3>
+                  <p>Very good basic knowledge through LabVIEW courses</p>
+                </div>
+              </div>
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>Siemens Simatic S7</h3>
+                  <p>Basic knowledge of PLC technology with the language types LD, FBD and IL</p>
+                </div>
+              </div>
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>WinFACT Boris</h3>
+                  <p>Design simulation model of a mechatronic system (One semester lab course)</p>
+                </div>
+              </div>
+              <div class="skills-article">
+                <img
+                src="./assets/checkmark.png"
+                alt="Project 1"
+                class="icon"
+                />
+                <div>
+                  <h3>PTC Creo-CAD</h3>
+                  <p>Fundamental of 3D-CAD drawing and design skills for the modelling of components and assemblies</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <!--
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section> 
+    -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mohamad.ai.binabdulhalim@gmail.com">mohamad.ai.binabdulhalim@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mohamad-afif-irfan-bin-abdul-halim-81621422a/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p style="color:black;">(+60)134616550</p>
+        </div>
+      </div>
+    </section>
+      
+    <footer>
+      <div class="nav-links-container">
+        <ul class="bottom-nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <p>Copyright &#169; 2024 Mohamad Afif Irfan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
