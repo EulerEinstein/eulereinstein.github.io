@@ -23,6 +23,12 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+
+  #profile {
+    height:83vh;
+    margin-bottom: 11rem;
+  }
+
   #profile,
   .section-container {
     display: block;
