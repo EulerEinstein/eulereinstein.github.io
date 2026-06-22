@@ -97,19 +97,45 @@ nav a:hover{
     font-size:1.05rem;
 }
 
-.hero-image{
+.hero-grid{
     display:flex;
-    justify-content:center;
-    margin-bottom:20px;
+    align-items:center;
+    gap:40px;
 }
 
+/* image side */
 .hero-image img{
-    width:160px;
-    height:160px;
+    width:180px;
+    height:180px;
     object-fit:cover;
     border-radius:50%;
     border:3px solid var(--border);
     box-shadow:0 6px 18px rgba(15, 23, 42, 0.15);
+}
+
+/* text side */
+.hero-text h1{
+    font-size:2.6rem;
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.contact-line{
+    color:var(--muted);
+    line-height:1.8;
+}
+
+/* mobile responsive */
+@media(max-width:768px){
+    .hero-grid{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-image img{
+        width:150px;
+        height:150px;
+    }
 }
 
 .contact-line{
@@ -246,20 +272,23 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
+  <div class="container hero-grid">
 
-<div class="container">
+    <div class="hero-image">
+      <img src="assets/profile-pic.png" alt="Profile Photo">
+    </div>
 
-<div class="hero-image">
-<img src="assets/profile-pic.png" alt="Profile Photo">
-</div>
+    <div class="hero-text">
+      <h1>Mohamad Afif Irfan Bin Abdul Halim</h1>
 
-<h1>Mohamad Afif Irfan Bin Abdul Halim</h1>
+      <div class="contact-line">
+        📍 Kajang, Selangor <br>
+        📧 mohamad.ai.binabdulhalim@gmail.com <br>
+        📱 011-28777267
+      </div>
+    </div>
 
-<div class="contact-line">
-📍 Kajang, Selangor | 📧 mohamad.ai.binabdulhalim@gmail.com | 📱 011-28777267
-</div>
-
-</div>
+  </div>
 </section>
 
 <!-- SUMMARY -->
