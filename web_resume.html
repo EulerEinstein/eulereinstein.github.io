@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mohamad Afif Irfan | Engineering Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#0f172a;
+    --accent:#2563eb;
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --text:#334155;
+    --muted:#64748b;
+    --border:#e2e8f0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    line-height:1.7;
+
+    /* solid dark professional blue background */
+    background: #c7d7ee;
+}
+
+.container{
+    width:min(1100px,92%);
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:white;
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+nav .logo{
+    font-weight:700;
+    color:var(--primary);
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* HERO */
+.hero{
+    padding:70px 0;
+}
+
+.hero h1{
+    font-size:2.8rem;
+    color:var(--primary);
+}
+
+.hero p{
+    margin-top:15px;
+    max-width:850px;
+    font-size:1.05rem;
+}
+
+.contact-line{
+    margin-top:15px;
+    color:var(--muted);
+}
+
+/* SECTION (reduced spacing) */
+section{
+    padding:5px 0;
+}
+
+.title{
+    font-size:1.8rem;
+    margin-bottom:5px;
+    color:var(--primary);
+}
+
+/* CARD */
+.card{
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+
+    /* subtle depth */
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    backdrop-filter: blur(4px);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:5px;
+}
+
+#summary .card p{
+    text-align: justify;
+    hyphens: auto;
+}
+
+.meta{
+    color:var(--muted);
+    font-size:0.95rem;
+    margin-bottom:10px;
+}
+
+h4{
+    margin-top:12px;
+    color:var(--primary);
+}
+
+ul{
+    padding-left:20px;
+}
+
+/* JOB HEADER (NEW) */
+.job-header{
+    margin-bottom: 12px;
+}
+
+.position{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.company{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-top: 2px;
+}
+
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:12px;
+}
+
+.skill{
+    background:white;
+    border:1px solid var(--border);
+    padding:12px;
+    text-align:center;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    border-top:1px solid var(--border);
+    color:var(--muted);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Afif Irfan</div>
+
+<ul>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-image">
+<img src="profile.jpg" alt="Profile Photo">
+</div>
+
+<h1>Mohamad Afif Irfan Bin Abdul Halim</h1>
+
+<div class="contact-line">
+📍 Kajang, Selangor | 📧 mohamad.ai.binabdulhalim@gmail.com | 📱 011-28777267
+</div>
+
+</div>
+</section>
+
+<!-- SUMMARY -->
+<section id="summary">
+<div class="container">
+
+<h2 class="title">Professional Summary</h2>
+
+<div class="card">
+<p>
+Engineering professional with experience in systems integration, project execution,
+system testing and validation, and EPCIC projects. Skilled in commissioning,
+troubleshooting, automation, and programming (Python, C/C++, MATLAB).
+Experienced in collaborating with international OEMs and delivering complex technical
+projects in multicultural environments. Strong analytical and problem-solving abilities
+with a hands-on approach to system installation, integration, and commissioning.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<div class="container">
+
+<h2 class="title">Professional Experience</h2>
+
+<div class="card">
+
+<div class="job-header">
+    <div class="position">Technical Executive | Radar & Fire Control System | Combat System Centric Department</div>
+    <div class="company">LUMUT NAVAL SHIPYARD</div>
+    <div class="meta">
+        Perak, Malaysia | July 2024 – Present
+    </div>
+</div>
+
+<h4>Responsibilities</h4>
+<ul>
+<li>Execute technical projects from site readiness, installation, cable termination, to commissioning and its pre-requisites ensuring adherence to timelines, budgets, and scope.</li>
+<li>Support engineering and design teams, identify technical challenges and develop solutions during execution.</li>
+<li>Support OEMs for configuration setup and remote system connection.</li>
+<li>Communicate with local and international OEMs regarding system status and issues.</li>
+<li>Analyze failures and implement preventive and improvement actions.</li>
+<li>Implement quality assurance processes and engineering safety standards.</li>
+<li>Identify and mitigate project risks.</li>
+<li>Monitor project performance and implement corrective actions.</li>
+<li>Ensure compliance with SOPs, regulations, cybersecurity, safety, and quality standards.</li>
+<li>Hands-on work: wiring, continuity, network, insulation testing, installation, troubleshooting, repair.</li>
+<li>Train technicians, interns, and technical executives onboard vessel and workshop.</li>
+</ul>
+
+<h4>Achievements</h4>
+<ul>
+<li>Coordinated installation of Main Surveillance Radar, Navigation Radars, Fire Control Radar, Passive Surveillance System and Towed Array Sonar on LCS 1, 2, and 3.</li>
+<li>Assisted OEM for STW and Harbour Acceptance Test of Thales SMART-S MK2 Radar and Passive Surveillance System.</li>
+<li>Assisted OEM for inspection and maintenance of Rheinmetall Fire Control Radar.</li>
+<li>Represented company for Factory Acceptance Test of Passive Surveillance System in the United Kingdom.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<div class="job-header">
+    <div class="position">PROTÉGÉ GEES | Project Offshore Delivery Department</div>
+    <div class="company">PETRONAS</div>
+    <div class="meta">
+        Kuala Lumpur, Malaysia | November 2023 – June 2024
+    </div>
+</div>
+
+<ul>
+<li>Involved in EPCIC planning for low-speed wind turbine pilot research project.</li>
+<li>Developed automated monitoring system using Microsoft Excel.</li>
+<li>Coordinated EPCC infill project scope definition with engineers.</li>
+<li>Conducted market research on wind turbine companies.</li>
+<li>Collected project data for manpower analysis.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<div class="job-header">
+    <div class="position">Internship | System Validation of Lawn Mowing Robot(R&D)</div>
+    <div class="company">ANDREAS STIHL AG & CO. KG</div>
+    <div class="meta">
+        Waiblingen, Germany | April 2022 – September 2022
+    </div>
+</div>
+
+<ul>
+<li>Conducted validation tests ensuring product compliance and requirements.</li>
+<li>Tested robot software and mobile applications (Android & iPhone).</li>
+<li>Developed simulation tests for robotic systems.</li>
+<li>Developed test automation scripts using C, PROVETech: TA, CANape.</li>
+<li>Created MATLAB App Designer UI for data evaluation.</li>
+<li>Developed Python GUI for 2D garden design and drag-and-drop tool.</li>
+</ul>
+
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<div class="container">
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+<h3>Technical University of Applied Sciences Würzburg-Schweinfurt</h3>
+<div class="meta">
+Bachelor of Engineering in Mechatronics | Germany
+</div>
+<ul>
+<li>Automation and Robotics</li>
+<li>Automated Systems and Human-Machine Interaction</li>
+<li>Bachelor Thesis: Virtual Commissioning of a Linear Axis Machine</li>
+<li>Final Grade: 1.7 (Equivalent to UK First Class Honours)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>University of Mannheim</h3>
+<div class="meta">German Language Course (A2 – C1)</div>
+<p>DSH-2 (C1 Level)</p>
+</div>
+
+<div class="card">
+<h3>German-Malaysian Institute</h3>
+<div class="meta">Cambridge International A-Levels</div>
+<p>3A’s (Mathematics, Physics & Chemistry)</p>
+</div>
+
+<div class="card">
+<h3>MRSM Kepala Batas</h3>
+<div class="meta">SPM</div>
+<p>11 A’s | A+ in Mathematics, Additional Mathematics, Physics, Chemistry</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<div class="container">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+<div class="skill">Python</div>
+<div class="skill">C</div>
+<div class="skill">C++</div>
+<div class="skill">MATLAB</div>
+<div class="skill">Simulink</div>
+<div class="skill">LabVIEW</div>
+<div class="skill">Siemens S7</div>
+<div class="skill">WinFACT BORIS</div>
+<div class="skill">PTC Creo</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript (Basics)</div>
+<div class="skill">Node-RED</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Mohamad Afif Irfan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
